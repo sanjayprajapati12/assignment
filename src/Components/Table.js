@@ -218,7 +218,7 @@ const Table = () => {
         },
         table: {
             style: {
-              minWidth: "100vw",
+              minWidth: "90vw",
             },
         },
     }
