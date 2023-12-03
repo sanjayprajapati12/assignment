@@ -26,11 +26,12 @@
     display: flex;
     justify-content: space-between;
     gap : 10px;
+    margin-right: auto;
 }
 
 .search{
     margin-right: auto  ;
-    width: 15vw;
+    width: 20vw;
     height: 3vh;
     padding: 1vh 1vw;
     outline: none;

@@ -52,11 +52,13 @@ const Table = () => {
     }
 
     const handleDelete = (del)=>{
-        const newData = data.filter((item1) => !del.some((item2) => item1.id === item2.id));
-        setData(newData);
-        
-        const newFilterData = filterData.filter((item1) => !del.some((item2) => item1.id === item2.id));
-        setFilterData(newFilterData);
+        if(del!==undefined){
+            const newData = data.filter((item1) => !del.some((item2) => item1.id === item2.id));
+            setData(newData);
+            
+            const newFilterData = filterData.filter((item1) => !del.some((item2) => item1.id === item2.id));
+            setFilterData(newFilterData);
+        }
     }
 
     const handleEdit = (row)=>{
@@ -207,19 +209,24 @@ const Table = () => {
         }
     ];
 
-    const tableHeaderStyle={
+    const customStyle={
         headCells:{
             style:{
                 fontWeight : "bold",
                 fontSize : "14px"
             },
-        }
+        },
+        table: {
+            style: {
+              minWidth: "100vw",
+            },
+        },
     }
 
     return(
         <div className="container">
             <DataTable
-                customStyles={tableHeaderStyle}
+                customStyles={customStyle}
                 columns={columns}
                 data = {filterData}
                 selectableRows
