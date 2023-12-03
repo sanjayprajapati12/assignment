@@ -1,0 +1,38 @@
+.del-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.edit-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.correct-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.wrong-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.eGQSob{
+    display: none !important;
+}
+
+.action{
+    display: flex;
+    justify-content: space-between;
+    gap : 10px;
+}
+
+.search{
+    margin-right: auto  ;
+    width: 15vw;
+    height: 3vh;
+    padding: 1vh 1vw;
+    outline: none;
+    border-radius: 10px;
+}
