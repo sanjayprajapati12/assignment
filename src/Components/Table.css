@@ -22,6 +22,10 @@
     display: none !important;
 }
 
+.uBdBf{
+    display: none !important;
+}
+
 .action{
     display: flex;
     justify-content: space-between;
